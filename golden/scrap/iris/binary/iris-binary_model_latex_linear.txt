@@ -1,0 +1,1 @@
+\mathbf{Z}^{(1)} = \mathbf{X} \mathbf{W}^{(1) \mathsf{T}} + \mathbf{b}^{(1) \mathsf{T}}

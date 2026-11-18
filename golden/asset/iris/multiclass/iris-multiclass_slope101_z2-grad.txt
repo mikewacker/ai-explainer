@@ -1,0 +1,20 @@
+\begin{bmatrix}
+\frac{\partial L}{\partial z^{(2)}_1} \\
+\frac{\partial L}{\partial z^{(2)}_2} \\
+\frac{\partial L}{\partial z^{(2)}_3}
+\end{bmatrix}
+= \begin{bmatrix}
+\hat{y}_1 - y_1 \\
+\hat{y}_2 - y_2 \\
+\hat{y}_3 - y_3
+\end{bmatrix}
+\approx \begin{bmatrix}
+0.01 - 0 \\
+0.52 - 0 \\
+0.47 - 1
+\end{bmatrix}
+\approx \begin{bmatrix}
+0.01 \\
+0.52 \\
+-0.53
+\end{bmatrix}

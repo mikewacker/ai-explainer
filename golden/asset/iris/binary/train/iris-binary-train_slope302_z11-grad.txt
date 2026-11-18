@@ -1,0 +1,7 @@
+a_1 = \operatorname{ReLU}(z^{(1)}_1)
+
+\frac{\partial a_1}{\partial z^{(1)}_1} = \begin{cases} 1, & \text{if } z^{(1)}_1 > 0 \\ 0, & \text{if } z^{(1)}_1 \le 0 \end{cases}
+
+\frac{\partial a_1}{\partial z^{(1)}_1} = \begin{cases} 1, & \text{if } z^{(1)}_1 > 0 \\ 0, & \text{if } z^{(1)}_1 \le 0 \end{cases} = \begin{cases} 1, & \text{if } 2.93 > 0 \\ 0, & \text{if } 2.93 \le 0 \end{cases} = 1
+
+\frac{\partial L}{\partial z^{(1)}_1} = \frac{\partial L}{\partial a_1} \frac{\partial a_1}{\partial z^{(1)}_1} \approx 0.16 \cdot 1 \approx 0.16

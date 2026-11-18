@@ -1,0 +1,29 @@
+services:
+  ai-explainer:
+    image: ghcr.io/mikewacker/ai-explainer:${AI_EXPLAINER_TAG:-stable}
+    platform: linux/amd64
+    volumes:
+      - .:/workspace
+      - venv:/workspace/.venv
+      - uv-cache:/tmp/.uv-cache
+    working_dir: /workspace
+    environment:
+      DISPLAY: :99
+      UV_CACHE_DIR: /tmp/.uv-cache
+      UV_LINK_MODE: copy
+      ATEN_CPU_CAPABILITY: default
+      MKL_CBWR: COMPATIBLE
+    entrypoint:
+      - bash
+      - -c
+      - |
+        Xvfb :99 -screen 0 3840x2160x24 -dpi 192 2> /var/log/xvfb.log &
+        exec "$$@"
+      - _
+    command: ["bash"]
+    stdin_open: true
+    tty: true
+
+volumes:
+  venv:
+  uv-cache:

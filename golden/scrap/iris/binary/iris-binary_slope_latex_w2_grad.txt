@@ -1,0 +1,5 @@
+z^{(2)} = w^{(2)}_1 a_1 + w^{(2)}_2 a_2 + w^{(2)}_3 a_3 + w^{(2)}_4 a_4 + w^{(2)}_5 a_5 + b^{(2)}
+
+\frac{\partial z^{(2)}}{\partial w^{(2)}_3} = a_3 \approx 1.18
+
+\frac{\partial L}{\partial w^{(2)}_3} = \frac{\partial L}{\partial z^{(2)}} \frac{\partial z^{(2)}}{\partial w^{(2)}_3} \approx -0.61 \cdot 1.18 \approx -0.72

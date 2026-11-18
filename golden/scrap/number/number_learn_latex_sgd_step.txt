@@ -1,0 +1,5 @@
+\frac{\partial L}{\partial w} = 2(w - 1.5) = 2(3 - 1.5) = 3
+
+0.01 \frac{\partial L}{\partial w} = 0.01 \cdot 3 = 0.03
+
+w - 0.01 \frac{\partial L}{\partial w} = 3 - 0.03 = 2.97

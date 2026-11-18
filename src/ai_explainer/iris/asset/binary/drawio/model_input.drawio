@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram name="Diagram" id="diagram">
+    <mxGraphModel dx="868" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="220" pageHeight="300" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="in1-x1" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="30" as="sourcePoint" />
+            <mxPoint x="90" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in2-x2" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="110" as="sourcePoint" />
+            <mxPoint x="90" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in3-x3" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="190" as="sourcePoint" />
+            <mxPoint x="90" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in4-x4" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="270" as="sourcePoint" />
+            <mxPoint x="90" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x1-out1" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="30" as="sourcePoint" />
+            <mxPoint x="170" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x2-out2" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="110" as="sourcePoint" />
+            <mxPoint x="170" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3-out3" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="190" as="sourcePoint" />
+            <mxPoint x="170" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x4-out4" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="270" as="sourcePoint" />
+            <mxPoint x="170" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in1" parent="1" style="fillColor=[[in_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x1:x_1]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="in2" parent="1" style="fillColor=[[in_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x2:x_2]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="10" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="in3" parent="1" style="fillColor=[[in_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x3:x_3]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="in4" parent="1" style="fillColor=[[in_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x4:x_4]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="10" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="x1" parent="1" style="ellipse;fillColor=white;strokeColor=black;fontFamily=STIX;fontSize=16;html=1" value="$$x_1$$" vertex="1">
+          <mxGeometry height="40" width="40" x="90" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" parent="1" style="ellipse;fillColor=white;strokeColor=black;fontFamily=STIX;fontSize=16;html=1" value="$$x_2$$" vertex="1">
+          <mxGeometry height="40" width="40" x="90" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="x3" parent="1" style="ellipse;fillColor=white;strokeColor=black;fontFamily=STIX;fontSize=16;html=1" value="$$x_3$$" vertex="1">
+          <mxGeometry height="40" width="40" x="90" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="x4" parent="1" style="ellipse;fillColor=white;strokeColor=black;fontFamily=STIX;fontSize=16;html=1" value="$$x_4$$" vertex="1">
+          <mxGeometry height="40" width="40" x="90" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="out1" parent="1" style="fillColor=[[out_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x1:x_1]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="170" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="out2" parent="1" style="fillColor=[[out_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x2:x_2]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="170" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="out3" parent="1" style="fillColor=[[out_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x3:x_3]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="170" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="out4" parent="1" style="fillColor=[[out_color:none]];strokeColor=none;fontFamily=STIX;fontSize=16;html=1" value="$$[[x4:x_4]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="170" y="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

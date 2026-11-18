@@ -1,0 +1,5 @@
+\frac{\partial L}{\partial w}
+
+\frac{\partial L}{\partial w} = 2(w - 3.5)
+
+\frac{\partial L}{\partial w} = 2(w - 3.5) = 2(5 - 3.5) = 3

@@ -1,0 +1,5 @@
+a_5 = \operatorname{ReLU}(z^{(1)}_5)
+
+\frac{\partial a_5}{\partial z^{(1)}_5} = \begin{cases} 1, & \text{if } z^{(1)}_5 > 0 \\ 0, & \text{if } z^{(1)}_5 \le 0 \end{cases} = \begin{cases} 1, & \text{if } -0.05 > 0 \\ 0, & \text{if } -0.05 \le 0 \end{cases} = 0
+
+\frac{\partial L}{\partial z^{(1)}_5} = \frac{\partial L}{\partial a_5} \frac{\partial a_5}{\partial z^{(1)}_5} \approx 0.27 \cdot 0 \approx 0.00

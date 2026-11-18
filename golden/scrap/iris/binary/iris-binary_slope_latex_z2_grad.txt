@@ -1,0 +1,1 @@
+\frac{\partial L}{\partial z^{(2)}} = \hat{y} - y \approx 0.39 - 1 \approx -0.61
