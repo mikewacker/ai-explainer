@@ -1,0 +1,5 @@
+a_3 = \operatorname{ReLU}(z^{(1)}_3)
+
+\frac{\partial a_3}{\partial z^{(1)}_3} = \begin{cases} 1, & \text{if } z^{(1)}_3 > 0 \\ 0, & \text{if } z^{(1)}_3 \le 0 \end{cases} = \begin{cases} 1, & \text{if } 1.18 > 0 \\ 0, & \text{if } 1.18 \le 0 \end{cases} = 1
+
+\frac{\partial L}{\partial z^{(1)}_3} = \frac{\partial L}{\partial a_3} \frac{\partial a_3}{\partial z^{(1)}_3} \approx 0.16 \cdot 1 \approx 0.16

@@ -1,0 +1,46 @@
+\frac{\partial L}{\partial a_1} = \frac{\partial L}{\partial z^{(2)}_1} \frac{\partial z^{(2)}_1}{\partial a_1} + \frac{\partial L}{\partial z^{(2)}_2} \frac{\partial z^{(2)}_2}{\partial a_1} + \frac{\partial L}{\partial z^{(2)}_3} \frac{\partial z^{(2)}_3}{\partial a_1}
+
+\begin{bmatrix}
+z^{(2)}_1 \\
+z^{(2)}_2 \\
+z^{(2)}_3
+\end{bmatrix}
+= \begin{bmatrix}
+w^{(2)}_{11} a_1 + w^{(2)}_{12} a_2 + w^{(2)}_{13} a_3 + w^{(2)}_{14} a_4 + w^{(2)}_{15} a_5 + b^{(2)}_1 \\
+w^{(2)}_{21} a_1 + w^{(2)}_{22} a_2 + w^{(2)}_{23} a_3 + w^{(2)}_{24} a_4 + w^{(2)}_{25} a_5 + b^{(2)}_2 \\
+w^{(2)}_{31} a_1 + w^{(2)}_{32} a_2 + w^{(2)}_{33} a_3 + w^{(2)}_{34} a_4 + w^{(2)}_{35} a_5 + b^{(2)}_3
+\end{bmatrix}
+
+\begin{bmatrix}
+\frac{\partial z^{(2)}_1}{\partial a_1} \\
+\frac{\partial z^{(2)}_2}{\partial a_1} \\
+\frac{\partial z^{(2)}_3}{\partial a_1}
+\end{bmatrix}
+= \begin{bmatrix}
+w^{(2)}_{11} \\
+w^{(2)}_{21} \\
+w^{(2)}_{31}
+\end{bmatrix}
+
+\begin{bmatrix}
+\frac{\partial z^{(2)}_1}{\partial a_1} \\
+\frac{\partial z^{(2)}_2}{\partial a_1} \\
+\frac{\partial z^{(2)}_3}{\partial a_1}
+\end{bmatrix}
+= \begin{bmatrix}
+w^{(2)}_{11} \\
+w^{(2)}_{21} \\
+w^{(2)}_{31}
+\end{bmatrix}
+\approx \begin{bmatrix}
+-0.21 \\
+0.40 \\
+0.28
+\end{bmatrix}
+
+\begin{alignat*}{3}
+\frac{\partial L}{\partial a_1}
+&= \frac{\partial L}{\partial z^{(2)}_1} \frac{\partial z^{(2)}_1}{\partial a_1} &&+ \frac{\partial L}{\partial z^{(2)}_2} \frac{\partial z^{(2)}_2}{\partial a_1} &&+ \frac{\partial L}{\partial z^{(2)}_3} \frac{\partial z^{(2)}_3}{\partial a_1} \\
+&\approx 0.01 \cdot -0.21 &&+ 0.52 \cdot 0.40 &&+ -0.53 \cdot 0.28 \\
+&\approx 0.06
+\end{alignat*}

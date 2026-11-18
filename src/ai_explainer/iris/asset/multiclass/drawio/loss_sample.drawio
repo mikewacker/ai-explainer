@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Diagram" id="diagram">
+    <mxGraphModel dx="868" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="740" pageHeight="340" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x-nn" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="310" as="sourcePoint" />
+            <mxPoint x="210" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="params-nn" edge="1" parent="1" style="endArrow=classic;dashed=1;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="250" as="sourcePoint" />
+            <mxPoint x="270" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nn-yhat" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="310" as="sourcePoint" />
+            <mxPoint x="370" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhat-ce" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="310" as="sourcePoint" />
+            <mxPoint x="530" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-ce" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="250" as="sourcePoint" />
+            <mxPoint x="590" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ce-L" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="650" y="310" as="sourcePoint" />
+            <mxPoint x="690" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x" parent="1" style="fillColor=[[prediction_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\begin{bmatrix} [[x1:x_1]] &amp; [[x2:x_2]] &amp; [[x3:x_3]] &amp; [[x4:x_4]] \end{bmatrix}$$" vertex="1">
+          <mxGeometry height="40" width="160" x="10" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="params1" parent="1" style="fillColor=[[param_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\require{mathtools} \begin{bmatrix*}[r] [[w111:w^{(1)}_{11}]] &amp; [[w112:w^{(1)}_{12}]] &amp; [[w113:w^{(1)}_{13}]] &amp; [[w114:w^{(1)}_{14}]] \\ [[w121:w^{(1)}_{21}]] &amp; [[w122:w^{(1)}_{22}]] &amp; [[w123:w^{(1)}_{23}]] &amp; [[w124:w^{(1)}_{24}]] \\ [[w131:w^{(1)}_{31}]] &amp; [[w132:w^{(1)}_{32}]] &amp; [[w133:w^{(1)}_{33}]] &amp; [[w134:w^{(1)}_{34}]] \\ [[w141:w^{(1)}_{41}]] &amp; [[w142:w^{(1)}_{42}]] &amp; [[w143:w^{(1)}_{43}]] &amp; [[w144:w^{(1)}_{44}]] \\ [[w151:w^{(1)}_{51}]] &amp; [[w152:w^{(1)}_{52}]] &amp; [[w153:w^{(1)}_{53}]] &amp; [[w154:w^{(1)}_{54}]] \end{bmatrix*} \begin{bmatrix*}[r] [[b11:b^{(1)}_1]] \\ [[b12:b^{(1)}_2]] \\ [[b13:b^{(1)}_3]] \\ [[b14:b^{(1)}_4]] \\ [[b15:b^{(1)}_5]] \end{bmatrix*}$$" vertex="1">
+          <mxGeometry height="160" width="320" x="110" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="params2" parent="1" style="fillColor=[[param_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\require{mathtools} \begin{bmatrix*}[r] [[w211:w^{(2)}_{11}]] &amp; [[w212:w^{(2)}_{12}]] &amp; [[w213:w^{(2)}_{13}]] &amp; [[w214:w^{(2)}_{14}]] &amp; [[w215:w^{(2)}_{15}]] \\ [[w221:w^{(2)}_{21}]] &amp; [[w222:w^{(2)}_{22}]] &amp; [[w223:w^{(2)}_{23}]] &amp; [[w224:w^{(2)}_{24}]] &amp; [[w225:w^{(2)}_{25}]] \\ [[w231:w^{(2)}_{31}]] &amp; [[w232:w^{(2)}_{32}]] &amp; [[w233:w^{(2)}_{33}]] &amp; [[w234:w^{(2)}_{34}]] &amp; [[w235:w^{(2)}_{35}]] \end{bmatrix*} \begin{bmatrix*}[r] [[b21:b^{(2)}_1]] \\ [[b22:b^{(2)}_2]] \\ [[b23:b^{(2)}_3]] \end{bmatrix*}$$" vertex="1">
+          <mxGeometry height="80" width="320" x="110" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nn" parent="1" style="fillColor=#f5f5f5;strokeColor=black;fontFamily=STIX;fontSize=15;html=1" value="$$\text{neural network}$$" vertex="1">
+          <mxGeometry height="40" width="120" x="210" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="yhat" parent="1" style="fillColor=[[prediction_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\begin{bmatrix} [[yhat1:\hat{y}_1]] &amp; [[yhat2:\hat{y}_2]] &amp; [[yhat3:\hat{y}_3]] \end{bmatrix} $$" vertex="1">
+          <mxGeometry height="40" width="120" x="370" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="y" parent="1" style="fillColor=[[target_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\begin{bmatrix} [[y1:y_1]] &amp; [[y2:y_2]] &amp; [[y3:y_3]] \end{bmatrix}$$" vertex="1">
+          <mxGeometry height="40" width="80" x="550" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ce" parent="1" style="fillColor=#f5f5f5;strokeColor=black;fontFamily=STIX;fontSize=15;html=1" value="$$\text{cross-entropy}$$" vertex="1">
+          <mxGeometry height="40" width="120" x="530" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="L" parent="1" style="fillColor=[[loss_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$[[L:L]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="690" y="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

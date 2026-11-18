@@ -1,0 +1,32 @@
+\begin{bmatrix}
+\frac{\partial L}{\partial w_1} \\
+\frac{\partial L}{\partial w_2}
+\end{bmatrix}
+
+\begin{bmatrix}
+\frac{\partial L}{\partial w_1} \\
+\frac{\partial L}{\partial w_2}
+\end{bmatrix}
+= \begin{bmatrix}
+\frac{3.54(\hat{y}_1 - 885) + 2.9(\hat{y}_2 - 355) + 7.82(\hat{y}_3 - 750)}{3} \\
+\frac{4.06(\hat{y}_1 - 885) + 2.06(\hat{y}_2 - 355) + 2.82(\hat{y}_3 - 750)}{3}
+\end{bmatrix}
+
+\begin{align*}
+\begin{bmatrix}
+\frac{\partial L}{\partial w_1} \\
+\frac{\partial L}{\partial w_2}
+\end{bmatrix}
+&= \begin{bmatrix}
+\frac{3.54(\hat{y}_1 - 885) + 2.9(\hat{y}_2 - 355) + 7.82(\hat{y}_3 - 750)}{3} \\
+\frac{4.06(\hat{y}_1 - 885) + 2.06(\hat{y}_2 - 355) + 2.82(\hat{y}_3 - 750)}{3}
+\end{bmatrix} \\
+&= \begin{bmatrix}
+\frac{3.54(849.5 - 885) + 2.9(480.7 - 355) + 7.82(831.3 - 750)}{3} \\
+\frac{4.06(849.5 - 885) + 2.06(480.7 - 355) + 2.82(831.3 - 750)}{3}
+\end{bmatrix} \\
+&\approx \begin{bmatrix}
+291.54 \\
+114.69
+\end{bmatrix}
+\end{align*}

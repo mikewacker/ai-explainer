@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Diagram" id="diagram">
+    <mxGraphModel dx="868" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="140" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x1-model" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="30" as="sourcePoint" />
+            <mxPoint x="210" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x2-model" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="110" as="sourcePoint" />
+            <mxPoint x="210" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="model-yhat" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=16;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="70" as="sourcePoint" />
+            <mxPoint x="410" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x1" parent="1" style="fillColor=none;strokeColor=none;align=right;fontFamily=STIX;fontSize=16;html=1" value="$$\text{malic acid}$$" vertex="1">
+          <mxGeometry height="40" width="160" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" parent="1" style="fillColor=none;strokeColor=none;align=right;fontFamily=STIX;fontSize=16;html=1" value="$$\text{proanthocyanidins}$$" vertex="1">
+          <mxGeometry height="40" width="160" x="10" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="model" parent="1" style="fillColor=black;strokeColor=black;fontFamily=STIX;fontSize=16;html=1" value="" vertex="1">
+          <mxGeometry height="40" width="160" x="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yhat" parent="1" style="fillColor=none;strokeColor=none;align=left;fontFamily=STIX;fontSize=16;html=1" value="$$\hat{\text{proline}}$$" vertex="1">
+          <mxGeometry height="40" width="80" x="410" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

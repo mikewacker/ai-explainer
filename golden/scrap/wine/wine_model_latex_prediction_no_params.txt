@@ -1,0 +1,5 @@
+\begin{alignat*}{2}
+\hat{y}
+&= w_1 x_1 &&+ w_2 x_2 \\
+&= w_1 \cdot 3 &&+ w_2 \cdot 1
+\end{alignat*}

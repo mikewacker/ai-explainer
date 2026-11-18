@@ -1,0 +1,57 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    container:
+      image: ghcr.io/mikewacker/ai-explainer:stable
+    env:
+      DISPLAY: :99
+      UV_CACHE_DIR: ${{ github.workspace }}/.uv-cache
+      PLAYWRIGHT_BROWSERS_PATH: /tmp/ms-playwright
+      ATEN_CPU_CAPABILITY: default
+      MKL_CBWR: COMPATIBLE
+    steps:
+      - name: Start Xvfb
+        run: Xvfb :99 -screen 0 3840x2160x24 -dpi 192 2> /var/log/xvfb.log &
+
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Restore uv cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .uv-cache
+          key: uv-${{ hashFiles('uv.lock') }}
+          restore-keys: uv-
+
+      - name: Check uv lockfile
+        run: uv lock --check
+
+      - name: Sync uv
+        run: uv sync --frozen
+
+      - name: Check
+        run: make check
+
+      - name: Test
+        id: test
+        run: make test
+
+      - name: Upload golden failures
+        if: failure() && steps.test.outcome == 'failure'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: golden-failures
+          path: out/failures/
+          if-no-files-found: ignore
+
+      - name: Minimize uv cache
+        run: uv cache prune --ci

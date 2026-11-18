@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Diagram" id="diagram">
+    <mxGraphModel dx="868" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="300" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x-nn" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="270" as="sourcePoint" />
+            <mxPoint x="210" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="params-nn" edge="1" parent="1" style="endArrow=classic;dashed=1;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="210" as="sourcePoint" />
+            <mxPoint x="270" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nn-yhat" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="270" as="sourcePoint" />
+            <mxPoint x="370" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhat-bce" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="270" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-bce" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="210" as="sourcePoint" />
+            <mxPoint x="530" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bce-L" edge="1" parent="1" style="endArrow=classic;fontFamily=STIX;fontSize=15;html=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610" y="270" as="sourcePoint" />
+            <mxPoint x="650" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x" parent="1" style="fillColor=[[prediction_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\begin{bmatrix} [[x1:x_1]] &amp; [[x2:x_2]] &amp; [[x3:x_3]] &amp; [[x4:x_4]] \end{bmatrix}$$" vertex="1">
+          <mxGeometry height="40" width="160" x="10" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="params1" parent="1" style="fillColor=[[param_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\require{mathtools} \begin{bmatrix*}[r] [[w111:w^{(1)}_{11}]] &amp; [[w112:w^{(1)}_{12}]] &amp; [[w113:w^{(1)}_{13}]] &amp; [[w114:w^{(1)}_{14}]] \\ [[w121:w^{(1)}_{21}]] &amp; [[w122:w^{(1)}_{22}]] &amp; [[w123:w^{(1)}_{23}]] &amp; [[w124:w^{(1)}_{24}]] \\ [[w131:w^{(1)}_{31}]] &amp; [[w132:w^{(1)}_{32}]] &amp; [[w133:w^{(1)}_{33}]] &amp; [[w134:w^{(1)}_{34}]] \\ [[w141:w^{(1)}_{41}]] &amp; [[w142:w^{(1)}_{42}]] &amp; [[w143:w^{(1)}_{43}]] &amp; [[w144:w^{(1)}_{44}]] \\ [[w151:w^{(1)}_{51}]] &amp; [[w152:w^{(1)}_{52}]] &amp; [[w153:w^{(1)}_{53}]] &amp; [[w154:w^{(1)}_{54}]] \end{bmatrix*} \begin{bmatrix*}[r] [[b11:b^{(1)}_1]] \\ [[b12:b^{(1)}_2]] \\ [[b13:b^{(1)}_3]] \\ [[b14:b^{(1)}_4]] \\ [[b15:b^{(1)}_5]] \end{bmatrix*}$$" vertex="1">
+          <mxGeometry height="160" width="320" x="110" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="params2" parent="1" style="fillColor=[[param_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$\begin{bmatrix} [[w21:w^{(2)}_1]] &amp; [[w22:w^{(2)}_2]] &amp; [[w23:w^{(2)}_3]] &amp; [[w24:w^{(2)}_4]] &amp; [[w25:w^{(2)}_5]] \end{bmatrix} \quad \begin{matrix} [[b2:b^{(2)}]] \end{matrix}$$" vertex="1">
+          <mxGeometry height="40" width="320" x="110" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nn" parent="1" style="fillColor=#f5f5f5;strokeColor=black;fontFamily=STIX;fontSize=15;html=1" value="$$\text{neural network}$$" vertex="1">
+          <mxGeometry height="40" width="120" x="210" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="yhat" parent="1" style="fillColor=[[prediction_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$[[yhat:\hat{y}]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="370" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="y" parent="1" style="fillColor=[[target_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$[[y:y]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="510" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bce" parent="1" style="fillColor=#f5f5f5;strokeColor=black;fontFamily=STIX;fontSize=15;html=1" value="$$\text{binary cross-entropy}$$" vertex="1">
+          <mxGeometry height="40" width="160" x="450" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="L" parent="1" style="fillColor=[[loss_color:none]];strokeColor=none;fontFamily=STIX;fontSize=15;html=1" value="$$[[L:L]]$$" vertex="1">
+          <mxGeometry height="40" width="40" x="650" y="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
